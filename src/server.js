@@ -25,6 +25,7 @@ class App {
       autoescape: true
     });
 
+    this.express.use(express.static(path.resolve(__dirname, 'public')));
     this.express.set("view engine", "njk");
   }
 
