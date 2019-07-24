@@ -11,12 +11,12 @@ class SessionController {
     const user = await User.findOne({ where: { email } });
 
     if (!user) {
-      req.flash("error", "User not found.");
+      req.flash("error", "Usuário não encontrado.");
       return res.redirect("/");
     }
 
     if (!(await user.checkPassword(password))) {
-      req.flash("error", "Password incoreect");
+      req.flash("error", "Senha incorreta.");
       return res.redirect("/");
     }
 
