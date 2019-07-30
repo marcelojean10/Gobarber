@@ -11,7 +11,7 @@ module.exports = {
       },
       date: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.DATE
       },
       user_id: {
         type: Sequelize.INTEGER,
@@ -31,7 +31,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       },
-      update_at: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE
       }
